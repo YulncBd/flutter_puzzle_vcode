@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* 参考vue_puzzle_vcode，写的一个flutter插件

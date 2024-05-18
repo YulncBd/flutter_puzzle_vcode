@@ -13,8 +13,11 @@ import 'package:flutter_puzzle_vcode/src/puzzle_vcode_clipper.dart';
 import 'package:flutter_puzzle_vcode/src/puzzle_vcode_slider.dart';
 import 'package:flutter_puzzle_vcode/src/puzzle_vcode_util.dart';
 
+typedef VoidFunction = void Function();
+
 class FlutterPuzzleVCode extends StatefulWidget {
-  const FlutterPuzzleVCode({super.key});
+  final VoidFunction onSuccess;
+  const FlutterPuzzleVCode({super.key, required this.onSuccess});
 
   @override
   State<StatefulWidget> createState() => _FlutterPuzzleVCodeState();
@@ -52,6 +55,7 @@ class _FlutterPuzzleVCodeState extends State<FlutterPuzzleVCode>
           Future.delayed(const Duration(milliseconds: 1000), () {
             PuzzleVCodeUtil.verifyResult = 0;
             successAnimationController.reverse();
+            widget.onSuccess();
           });
         }
       });

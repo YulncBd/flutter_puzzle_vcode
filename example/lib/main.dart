@@ -58,7 +58,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 showDialog(
                     context: context,
                     builder: (BuildContext context) {
-                      return const FlutterPuzzleVCode();
+                      return FlutterPuzzleVCode(onSuccess: (){
+                        Navigator.pop(context);
+                      },);
                     });
               })),
     );
