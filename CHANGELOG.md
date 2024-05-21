@@ -1,3 +1,5 @@
-## 0.0.1
+## 0.0.2
 
-* 参考vue_puzzle_vcode，写的一个flutter插件
+* refer to vue_puzzle_vcode 
+* flutter project, not dependent on other SDKS
+

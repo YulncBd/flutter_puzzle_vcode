@@ -2,7 +2,6 @@
 // @date :2024/5/16
 // @author by irwin
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_puzzle_vcode/src/puzzle_vcode_clipper.dart';
 import 'dart:ui' as ui;

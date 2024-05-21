@@ -3,10 +3,7 @@
 // @author by irwin
 
 import 'dart:math';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_puzzle_vcode/src/puzzle_vcode_util.dart';
 
 class PuzzleVCodeSlider extends StatefulWidget {

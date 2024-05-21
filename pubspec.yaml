@@ -1,6 +1,6 @@
 name: flutter_puzzle_vcode
-description: "参考 vue-puzzle-vcode，用flutter实现的一个登录拼图验证弹框"
-version: 0.0.1
+description: "参考 vue-puzzle-vcode，用flutter实现的一个登录拼图验证弹框，不依赖其他sdk，纯flutter代码"
+version: 0.0.2
 homepage: 'https://github.com/YulncBd/flutter_puzzle_vcode.git'
 
 environment:
