@@ -17,6 +17,7 @@ typedef VoidFunction = void Function();
 
 class FlutterPuzzleVCode extends StatefulWidget {
   final VoidFunction onSuccess;
+
   const FlutterPuzzleVCode({super.key, required this.onSuccess});
 
   @override
@@ -205,6 +206,19 @@ class _FlutterPuzzleVCodeState extends State<FlutterPuzzleVCode>
                       );
                     },
                   ),
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: GestureDetector(
+                    onTap: () {
+                      initData();
+                    },
+                    child: const Icon(
+                      Icons.refresh,
+                      color: Color(0xff98FB98),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

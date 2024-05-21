@@ -57,6 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 showDialog(
                     context: context,
+                    barrierDismissible: true,
                     builder: (BuildContext context) {
                       return FlutterPuzzleVCode(onSuccess: (){
                         Navigator.pop(context);
