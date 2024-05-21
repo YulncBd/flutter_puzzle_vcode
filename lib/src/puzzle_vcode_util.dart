@@ -5,7 +5,6 @@
 import 'dart:math';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_puzzle_vcode/src/puzzle_vcode_bg_canvas.dart';
 import 'dart:ui' as ui;
 import 'package:flutter_puzzle_vcode/src/puzzle_vcode_canvas.dart';

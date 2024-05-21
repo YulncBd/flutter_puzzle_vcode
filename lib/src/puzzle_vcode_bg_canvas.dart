@@ -8,8 +8,10 @@ import 'dart:ui' as ui;
 
 class PuzzleVCodeBgCanvas extends StatefulWidget {
   final ui.Image bgImage;
-final PuzzleClipper clipper;
-  const PuzzleVCodeBgCanvas({super.key, required this.bgImage, required this.clipper});
+  final PuzzleClipper clipper;
+
+  const PuzzleVCodeBgCanvas(
+      {super.key, required this.bgImage, required this.clipper});
 
   @override
   State<StatefulWidget> createState() {
@@ -24,8 +26,8 @@ class _PuzzleVCodeBgCanvasState extends State<PuzzleVCodeBgCanvas> {
     // TODO: implement build
     return ClipRRect(
       child: CustomPaint(
-        painter:
-            PuzzleCanvasBgPainter(clipper: widget.clipper, bgImage: widget.bgImage),
+        painter: PuzzleCanvasBgPainter(
+            clipper: widget.clipper, bgImage: widget.bgImage),
       ),
     );
   }

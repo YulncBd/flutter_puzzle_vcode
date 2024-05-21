@@ -1,4 +1,4 @@
-// @description: 
+// @description:
 // @date :2024/5/17
 // @author by irwin
 
@@ -6,13 +6,16 @@
 import 'package:flutter/cupertino.dart';
 
 class PuzzleClipper extends CustomClipper<Path> {
-
   final double pinX;
   final double pinY;
   final double pinW;
   final double radius;
 
-  const PuzzleClipper({required this.pinX, required this.pinY, required this.pinW, required this.radius});
+  const PuzzleClipper(
+      {required this.pinX,
+      required this.pinY,
+      required this.pinW,
+      required this.radius});
 
   @override
   getClip(Size size) {
